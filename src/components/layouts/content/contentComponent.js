@@ -6,7 +6,10 @@ import AboutComponent  from "../../about";
 import SalaryComponet  from '../../employee/salaryComponent';
 import ProfileComponet from '../../employee/profileComponent';
 import LeaveComponent from '../../employee/leaveComponent';
-
+import LoginForm from '../../forms/loginForm'
+import SimpleRedux from '../../redux-exmaple/simpleReduxComponent'
+import WrappedComponent from '../../higher-order-component-example/hoc-with-functions'
+// import LoginComponent  from  '../../login/loginComponent'
 class ContentComponent extends Component {
     constructor(props) {
         super(props);
@@ -16,9 +19,7 @@ class ContentComponent extends Component {
         return ( 
             <div id="page-content-wrapper">
     <div className="container-fluid">
-    <div className="row" style={{marginBottom:40}}>
-    <a href="#menu-toggle" className="btn btn-default btn-xs" id="menu-toggle">Toggle Menu</a>
-    </div>
+    
         <div className="row">
             <div className="col-lg-12">
                
@@ -30,6 +31,12 @@ class ContentComponent extends Component {
         <Route strict exact path="/employee/salary"  component={SalaryComponet}/>
         <Route strict exact path="/employee/profile"  component={ProfileComponet}/>
         <Route strict exact path="/employee/leave"  component={LeaveComponent}/>
+        <Route strict exact path='/login' component={LoginForm}></Route>
+        <Route strict exact path='/redux' component={SimpleRedux}></Route>
+        <Route strict exact path='/hoc' component={WrappedComponent}></Route>
+        {/* <Route strict exact path='/auth' component={LoginComponent}></Route> */}
+        
+
         {/* <Route strict path="/user/:username"  
          render={({match})=>(
              this.state.logedin? (<user username={match.aparams.username}/>)

@@ -48,13 +48,15 @@ button {
   height: 100%;
   margin-left: -250px;
   overflow-y: auto;
-  background: #000;
+  background:#414654;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-
+.topnav-right {
+  float: right;
+}
 #wrapper.toggled #sidebar-wrapper {
   width: 250px;
 }
@@ -156,4 +158,44 @@ button {
 
 .white {
   color: #dcdcde;
+}
+#content{
+  height: 100% !important;
+  background-color:'#EEF5F9' !important;
+}
+.navbar-default {
+  background-color: white !important;
+  border-color: #e7e7e7;
+}
+.navbar-right{
+  margin-right: 16px !important;
+}
+.topicon{
+  color:#484848;
+}
+
+.topbar{
+  min-height: 64px;
+    padding: 0;
+    float:none;
+}
+.brandicon{
+  margin-left: 11px !important;
+  padding: 2px;
+}
+.padding-right{
+  padding-right: 15px;
+}
+ul {
+  list-style-type: none;
+}
+.login{
+  position: absolute !important;
+    left: 50% ;
+    top: 40%;    
+    transform: translate(-50%, -50%);
+    width: 400px;
+}
+.imgbac{
+  background-image: url('./asset/images/doctor.jpg');
 }

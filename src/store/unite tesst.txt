@@ -1,0 +1,5 @@
+npm run e2e -- --runType android18 --ignoreDeviceController 
+
+
+
+                                                            

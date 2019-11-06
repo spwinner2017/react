@@ -4,10 +4,20 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import {BrowserRouter} from 'react-router-dom';
+import 'semantic-ui-css/semantic.min.css';
+import {Provider} from 'react-redux'
+import {createStore} from 'redux'
+import SimpleRedux from './components/redux-exmaple/simpleReduxComponent'
+import reducer from './store/reducer'
+ const store=createStore(reducer)
 ReactDOM.render(
+    <Provider store={store}>
+       {/* <SimpleRedux/> */}
+  
 <BrowserRouter>
-<App />
+  <App />
 </BrowserRouter>
+</Provider>
 , document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change

@@ -24,30 +24,44 @@ class SideBarComponent extends  Component {
 }
     render() { 
         return ( 
+            <div>            
         <div id="sidebar-wrapper">
         <ul className="sidebar-nav">
-            <li className="sidebar-brand">
-             React Geek
+            <li className="sidebar-brand" style={{color:'white'}}>
+           Patient Care
             </li>
             <li>
              <Link exact to="/">Dashboard</Link>
             </li>
             <li>
-            <Link exact to="/about">About</Link>
+            <Link exact to="/about">Patinet</Link>
             </li>
             <li>
             <Link exact to="/user">User</Link>
             </li>
+            <li>
+            <Link exact to="/login">Register</Link>
+            </li>
+            {/* <li>
+            <Link exact to="/redux">redux</Link>
+            </li> */}
+            {/* <li>
+            <Link exact to="/hoc">HOC</Link>
+            </li> */}
+            <li>
+            {/* <Link exact to="/auth">Login</Link> */}
+            </li>
             <li className="active">
-           <a href="/#" className="clickable panel-collapsed">Employee<span className="pull-right"><i className="glyphicon glyphicon-chevron-down"></i></span></a>
+           <a href="javascript:void(0)" className="padding-right clickable panel-collapsed">Dropdown Menu<span className="pull-right"><i className="glyphicon glyphicon-chevron-down"></i></span></a>
                 <ul className="collapsein pointer">
-                    <li className="pointer white"><label className="pointer white"><Link to="/employee/profile">Profile</Link></label></li>
-                    <li className="pointer white"><label className="pointer white"><Link to="/employee/salary">Salary</Link></label></li>        
-                    <li className="pointer white"><label className="pointer white"><Link to="/employee/leave">Leave</Link></label></li>                         
+                    <li className="pointer white"><label className="pointer white"><Link to="/employee/profile">Link 1</Link></label></li>
+                    <li className="pointer white"><label className="pointer white"><Link to="/employee/salary">Link 2</Link></label></li>        
+                    <li className="pointer white"><label className="pointer white"><Link to="/employee/leave">Link 3</Link></label></li>                         
                 </ul>
 </li>
             
         </ul>
+        </div>
     </div> );
     }
 }
